@@ -8,6 +8,7 @@ public class Triangle {
 
     public Triangle() {
         this.inputData();  
+        this.checkInputs();
     }
 
     public void inputData() {
@@ -19,12 +20,12 @@ public class Triangle {
     }
 
     public void checkInputs() {
-        if (this.isGoodInput(baseStr)) {
-            System.err.println("1001 hiba!");
-            System.exit(1001);
+        if (!this.isGoodInput(baseStr)) {
+            throw new InputTypeError("alap");
+
         }
 
-        if(this.isGoodInput(heightStr)) {
+        if(!this.isGoodInput(heightStr)) {
             System.err.println("1002 hiba!");
             System.exit(1002);
         }
