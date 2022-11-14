@@ -26,7 +26,7 @@ public class Triangle {
         }
 
         if(!this.isGoodInput(heightStr)) {
-            System.err.println("1002 hiba!");
+            System.err.println("magasság");
             System.exit(1002);
         }
     }

@@ -6,7 +6,7 @@ public class InputTypeError extends RuntimeException{
 
         @Override
         public String toString() {
-            return "Hiba! Az " + msg + "nem szám";
+            return "Hiba! A(z) " + msg + "nem szám";
         }
     }
     
